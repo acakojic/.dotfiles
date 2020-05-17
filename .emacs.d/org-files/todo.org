@@ -1,0 +1,20 @@
+#+TODO: todo ucenje
+
+* ubc srediti
+* srediti brzinu tastature
+* instalirati oracle-linux8 
+  openvpn
+  ssh
+  * prouciti kako radi mreza
+    lokalna
+    globalna
+  ispitati rad rutera
+* srediti emacs exwm
+  * konfiguracija tastature
+    koristiti xah-fly svuda ako je moduce
+    
+* zasto ne moze svuda da bude emacs?
+  razumeti kako ovo postici
+  
+* kako radi gnu/linux
+  ** Mreza i njeno konfigurisanje
