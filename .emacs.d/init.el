@@ -22,6 +22,7 @@
 
 ;end-melpa
 
+;; (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
@@ -45,7 +46,7 @@
    '("#ee11dd" "#8584ae" "#b4f5fe" "#4c406d" "#ffe000" "#ffa500" "#ffa500" "#DC8CC3"))
  '(org-agenda-files '("~/.emacs.d/org-files/todo.org"))
  '(package-selected-packages
-   '(symon treemacs-magit magit xah-elisp-mode command-log-mode dracula-theme twilight-theme zerodark-theme zweilight-theme swiper dap-mode lsp-ui company-lsp hydra yasnippet projectile xah-fly-keys which-key try use-package gnu-elpa-keyring-update lsp-java lsp-mode))
+   '(ssh tramp symon treemacs-magit magit xah-elisp-mode command-log-mode dracula-theme twilight-theme zerodark-theme zweilight-theme swiper dap-mode lsp-ui company-lsp hydra yasnippet projectile xah-fly-keys which-key try use-package gnu-elpa-keyring-update lsp-java lsp-mode))
  '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(vc-annotate-background "#0bafed")
@@ -205,6 +206,13 @@
 (load "~/.emacs.d/use/java.el")
 (load "~/.emacs.d/use/eshell-conf.el")
 ;;(require 'java.el) 
+
+;;org-mode
+;; (org-babel-do-load-languages
+;;  'org-babel-load-languages
+;;  '(
+;;    (sh . t)
+;;    ))
 
 ;;;;
 ;; lsp-java
@@ -370,7 +378,26 @@
 
 ;; (add-hook 'exwm-mode-hook #'key-xterm)
 
+(setq org-confirm-babel-evaluate nil)
+(setq org-src-fontify-natively t)
+
+(org-babel-do-load-languages 'org-babel-load-languages
+    '(
+      (shell . t)
+      (python . t)
+      (java . t)
+      (sql . t)
+    )
+)
+
+
+
+;;http://howardism.org/Technical/Emacs/literate-devops.html
+(setq tramp-default-method "ssh")
+
 
 
 (exwm-enable)
 ;; (set-face-background 'modeline "#99ff99")
+
+
