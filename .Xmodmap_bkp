@@ -1,0 +1,10 @@
+keycode 18 = 9 less
+keycode 19 = 0 greater
+
+keycode 59 = comma parenleft
+keycode 60 = period parenright
+
+keycode 66 = Pause
+
+keycode 61 = minus underscore
+keycode 20 = slash question
