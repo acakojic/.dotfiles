@@ -1,0 +1,146 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/borivoje/.emacs.d/git-clone/" . "exwm/")
+ ("/home/borivoje/.dotfiles/" . ".emacs.d/")
+ ("/home/borivoje/.emacs.d/lisp/" . "exwm/")
+ ("/home/borivoje/.emacs.d/lisp/exwm/" . "exwm-0.23/")
+ ("/home/borivoje/.emacs.d/elpa/" . "exwm-0.23/")
+ ("/home/borivoje/virtualFolder/" . "vezbanje/")
+ ("/home/borivoje/virtualFolder/vezbanje/" . "Skeniranje/")
+ ("/home/borivoje/.emacs.d/" . "lisp/")
+ ("/etc/" . "init.d/")
+ ("/home/" . "borivoje/")
+ ("/" . "home/")
+ ("/home/borivoje/.config/" . "autostart/")
+ ("/home/borivoje/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/borivoje/.emacs.d/"
+ "/home/borivoje/.emacs.d/lisp/"
+ "/home/borivoje/"
+ "/home/borivoje/.emacs.d/configuration/"
+ "/home/borivoje/.emacs.d/git-clone/exwm/"
+ "/home/borivoje/.emacs.d-backup03/"
+ "/home/borivoje/.dotfiles/.emacs.d/"
+ "/home/borivoje/.emacs.d/elpa/exwm-0.23/"
+ "/home/borivoje/.emacs.d/lisp/exwm/exwm-0.23/"
+ "/home/borivoje/gemmax/"
+ "/home/borivoje/.emacs.d/lisp/exwm/"
+ "/home/borivoje/.emacs.d/elpa/"
+ "/home/borivoje/bin/"
+ "/home/borivoje/Downloads/"
+ "/home/borivoje/virtualFolder/vezbanje/Skeniranje/app/"
+ "/home/borivoje/virtualFolder/vezbanje/Skeniranje/"
+ "/home/borivoje/virtualFolder/vezbanje/Android_ScannerSDK_v2.4.5.0/"
+ "/home/borivoje/.openvpn/"
+ "/home/borivoje/.emacs.d/auto-save-list/"
+ "/etc/init.d/"
+ "/etc/"
+ "/home/borivoje/.config/autostart/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ ".xinitrc"
+ "ChangeLog.3"
+ "xah-fly-keys.el"
+ ".Xmodmap_bkp"
+ "test.txt"
+ "global-commands.el"
+ "exwm-input.el"
+ "test.el"
+ "init.el-backup"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/borivoje/.emacs.d/" (24239 58966 527170 472000) "eshell/" "elpa/" "recentf" "transient/" "acakojic-exwm-theme.el" "learning/" "./" "git-clone/" "sql/" "use/" "configuration/" "url/" "lisp/" "init.el" ".dap-breakpoints" "test.el" "../" "ido.last" "workspace/" "tango-dark-theme.el" "auto-save-list/" "org-files/" ".cache/")
+
+ ("/home/borivoje/" (24226 36083 836000 939000) ".multisystem/" "Music/" ".updatetool/" ".w3m/" "installs/" "output/" "soapui-settings.xml" "hs_err_pid16934.log" ".gfclient/" "eclipse/" ".#bash_profile" ".asadmintruststore" "default-soapui-workspace.xml" ".adobe/" "ubc/" ".java/" "gnome_shell_extensions_id.txt" ".swo" ".gksu.lock" ".Xmodmap_bkp" "projekti/" ".emacs.d/" ".netbeans/" "RELEASE-NOTES" ".m2/" "Android/" ".emacs.d-backup04/" "virtualFolder/" ".gitconfig" ".tooling/" "barkodovi/" "Templates/" ".soapuios/" ".sane/" ".audacity-data/" ".mozilla/" "meggle-osijek/" ".msjnc-profiles.cfg" ".emulator_console_auth_token" "test.txt" ".swn" ".msjnc.log" "jtds-1.3.1.jar" ".fltk/" "ubc-rfupdater/" ".thumbnails/" ".scenebuilder/" ".cert/" ".ssh/" ".xinitrc" "NOTICE" "iReport-5.6.0/" ".netbeans-derby/" "gemmax-bw/" "gemmax/" "Documents/" ".npm/" ".gnome/" "meggle-osijek-lv/" ".vim/" ".p2/" ".local/" ".bashrc" ".viminfo" ".gimp-2.8/" ".mplayer/" "ranger/" ".themes/" ".icons/" ".gradle/" "ubc-lv/" ".sdkman/" ".bash_aliases" ".my-user-config-backup/" ".pki/" "komunikacija/" ".mysql_history" ".Xauthority" ".remmina/" "gemmax-rf/" "dotfiles/" "biopanon.dmp" "using-files-over-ssh/" "netbeans-8.0.2/" ".eclipse/" "ChangeLog.3" "netbeans_themes/" "gnome_shell_extensions_conf.txt" "gemmax-lv/" ".openvpn/" "hplip-3.18.12.run" "eksport_baze_support.sh" "test-folder/" ".wine/" ".mysql/" "android-studio/" "LICENSE" ".profile" ".dotfiles/" "testdisk.log" ".bash_history" "Pictures/" "lib/" "eclipse-workspace/" "meggle-osijek-bw/" ".subversion/" ".Genymobile/" ".swt/" "glassfish3/" "conf/" "oracle_vbox_2016.asc" "tight_vnc/" "Calibre Library/" ".swp" "konfiguracija/" ".emacs.d-backup02/" ".nano/" "Firefox_wallpaper.png" ".sqlite_history" ".pulse_secure/" ".kchmviewer/" ".asadminpass" "temp/" "payara41/" "datamodeler.log" "logisoftvpn/" ".ike/" "Downloads/" "backup_aca/" ".emacs.d-backup/" ".config/" "SQLiteStudio/" ".lesshst" ".zshrc" ".gphoto/" "shortcuts/" ".android/" ".dbus/" ".gnupg/" ".vnc/" ".ideavimrc" ".FreeCAD/" "Videos/" "emacs22/" "NetBeansProjects/" "2020-03-25-01-20-24.060-VBoxSVC-15857.log" "git-meggle" ".Xresources" "AndroidStudio/" "upustvo/" ".emacs.d-backup03/" ".gconf/" ".macromedia/" "webapps/" ".swm" ".sqldeveloper/" "backup_sajta/" "VirtualBox VMs/" "skriptovi/" ".oracle_jre_usage/" "ubc-rf/" "RUNNING.txt" ".gnome2_private/" "linkovi/" ".my-user-config/" "oradiag_borivoje/" "jtds-1.2.jar" ".python_history" ".thunderbird/" "logs/" "logisoftclient.ovpn" ".wget-hsts" "Desktop/" "meggle-osijek-rf/" ".install4j" ".ireport/" "squirrel-sql-3.8.1/" "gnome_shell_extensions_appfolder.txt" "bin/" ".bogofilter/" ".AndroidStudio3.6/" ".bash_history-31835.tmp" "ncLinuxApp.jar" ".cache/" ".squirrel-sql/" ".hardinfo/" ".cups/" ".backup-aca/" "emacs27/" "hplip-3.18.12/" "artikli_jed_mere.xlsx" "vezbanje/" ".nbi/" "netbeans-8.2/" "ubc-bw/" ".gnome2/" ".bash_logout" "nohup.out" "Public/" ".ICEauthority" ".multisystem-theme" ".juniper_networks/" ".hplip/" ".vimrc" "Projects/" "../" "./")
+
+ ("/home/borivoje/.emacs.d/configuration/" (24225 61674 304026 225000) ".#global-commands.el" "./" "global-commands.el" "xterm.el" "../")
+
+ ("/home/borivoje/.emacs.d/lisp/" (24224 18178 472192 979000) "xah-fly-keys-original.el" "./" "xah-fly-keys-backup.el" "xah-fly-keys.el" "../" "session.el")
+
+ ("/home/borivoje/.emacs.d/auto-save-list/" (24221 52250 540097 380000) ".saves-28516-debian~" ".saves-19581-debian~" "./" ".saves-2342-debian~" ".saves-2834-debian~" "../" ".saves-2343-debian~")
+
+ ("/etc/" (24221 48618 708000 206000) "iproute2/" "timidity/" "bash_completion" "ImageMagick-6/" "GNUstep/" "resolvconf/" "rsyslog.conf" "resolv.conf" "foremost.conf" "rsyslog.d/" "cupshelpers/" "login.defs" "mime.types" "thunderbird/" "sound/" "qemu-ifdown" "strongswan.conf" "strongswan.d/" "networks" "gtk-2.0/" "sysstat/" "kernel/" "bonobo-activation/" "xml/" "acpi/" "checkinstallrc" ".java/" "insserv.conf" "kernel-img.conf" "mtools.conf" "fonts/" "ca-certificates/" "request-key.d/" "updatedb.conf" "opt/" "drirc" "xdg/" "subuid" "passwd-" "mpv/" "anacrontab" "apg.conf" "udev/" "securetty" "rc6.d/" "calendar/" "udisks2/" "rc3.d/" "pm/" "openvpn/" "l2tpns/" "systemd/" "tmpfiles.d/" "wgetrc" "libnl-3/" "python3.4/" "snmp/" "bash.bashrc" "qemu/" "kde/" "iked.conf" "i3status.conf" "xboard/" "sysctl.conf" "passwd" "cron.d/" "locale.alias" "ucf.conf" "maven/" "java/" "python3/" "issue" "NetworkManager/" "phpmyadmin/" "apm/" "ffserver.conf" "odbc.ini" "speech-dispatcher/" "ssh/" "gshadow-" "insserv.conf.d/" "machine-id" "localtime" "request-key.conf" "insserv/" "manpath.config" "chromium/" "dleyna-server-service.conf" "console-setup/" "xl2tpd/" "fstab" "usb_modeswitch.conf" "rc5.d/" "libaudit.conf" "at.deny" "rc0.d/" "mtab.fuselock" "ipsec.d/" "mtab" "gnome/" "gnome-vfs-mime-magic" "ODBCDataSources/" "hostapd/" "gnome-chess/" "newt/" "magic" "libpaper.d/" "python/" "teamviewer/" "discover-modprobe.conf" "firewalld/" "bogofilter.cf" "geoclue/" "printcap" "exim4/" "ld.so.conf.d/" "profile" ".pwd.lock" "protocols" "hdparm.conf" "debconf.conf" "sysctl.d/" "openal/" "odbcinst.ini" "cron.weekly/" "modules" "mailcap" "foomatic/" "hp/" "staff-group-for-usr-local" "skel/" "hosts.allow" "os-release" "firefox-esr/" "gss/" "security/" "sudoers" "gimp/" "polkit-1/" "apparmor.d/" "subgid" "vdpau_wrapper.cfg" "hotplug/" "cifs-utils/" "debian_version" "hosts" "subgid-" "gdm3/" "python3.5/" "i3blocks.conf" "machine-info" "subuid-" "avahi/" "reportbug.conf" "pam.conf" "modules-load.d/" "emacs24/" "dhcp/" "shadow-" "environment" "texmf/" "ldap/" "ghostscript/" "ca-certificates.conf.dpkg-old" "swanctl/" "emacs/" "usb_modeswitch.d/" "java-8-openjdk/" "group" "wildmidi/" "scalpel/" "UPower/" "libreoffice/" "rc2.d/" "gtk-3.0/" "emacs25/" "pulse/" "logrotate.conf" "apache2/" "Muttrc" "libccid_Info.plist" "pam.d/" "timezone" "crypttab" "sgml/" "qemu-ifup" "motd" "dictionaries-common/" "ufw/" "ld.so.cache" "dpkg/" "i3/" "init/" "chatscripts/" "java-7-openjdk/" "modprobe.d/" "host.conf" "ld.so.conf" "papersize" "hddtemp.db" "groff/" "bluetooth/" "sensors.d/" "apt/" "binfmt.d/" "init.d/" "netscsid.conf" "python2.7/" "bash_completion.d/" "hosts.deny" "rygel.conf" "hostname" "netconfig" "gshadow" "matplotlibrc" "wodim.conf" "chromium.d/" "dbconfig-common/" "cracklib/" "rc.local" "rcS.d/" "logrotate.d/" "network/" "perl/" "fuse.conf" "ethertypes" "nanorc" "cups/" "rc4.d/" "cron.hourly/" "Muttrc.d/" "adjtime" "lighttpd/" "sensors3.conf" "libao.conf" "mailcap.order" "initramfs-tools/" "dbus-1/" "gai.conf" "hosts.save" "ipsec-tools.conf" "ipsec.conf" "bindresvport.blacklist" "sudoers.d/" "aliases" "profile.d/" "ppp/" "appstream.conf" "wpa_supplicant/" "pnm2ppa.conf" "X11/" "ssl/" "inxi.conf" "logcheck/" "rpc" "gnome-vfs-2.0/" "shells" "sane.d/" "at-spi2/" "icedtea-web/" "reader.conf.d/" "samba/" "dkms/" "cron.daily/" "services" "vbox/" "issue.net" "gconf/" "vim/" "adduser.conf" "default/" "iked.dhcp" "terminfo/" "dleyna-renderer-service.conf" "firebird/" "vpnc/" "vconsole.conf" "group-" "ca-certificates.conf" "magic.mime" "ipsec.secrets" "rmt" "discover.conf.d/" "shadow" "php/" "ifplugd/" "hostname.save" "mailname" "grub.d/" "nsswitch.conf" "update-motd.d/" "mail.rc" "mke2fs.conf" "w3m/" "alternatives/" "email-addresses" "idmapd.conf" "inputrc" "purple/" "opensc/" "mysql/" "cron.monthly/" "crontab" "locale.gen" "rc1.d/" "selinux/" "PackageKit/" "oratab" "iscsi/" "deluser.conf" "screenrc" "../" "./")
+
+ ("/home/borivoje/.emacs.d/git-clone/exwm/" (24219 28984 876073 844000) "exwm-cm.el" "exwm-randr.el" ".elpaignore" "exwm-manage.el" "exwm.el" "./" "exwm-layout.el" ".gitignore" "exwm-input.el" "exwm-xim.el" "xinitrc" "exwm-config.el" "exwm-workspace.el" "../" "exwm-systemtray.el" "exwm-floating.el" "exwm-core.el" "README.md" ".git/")
+
+ ("/home/borivoje/.emacs.d/git-clone/" (24219 27070 964022 635000) "./" "xelb/" "../" "exwm/")
+
+ ("/home/borivoje/.emacs.d/elpa/" (24219 27070 988022 636000) "treemacs-magit-20200302.553/" "memoize-20200103.2036/" "with-editor-20200217.1015/" "ivy-20200319.1247/" "command-log-mode-20160413.447/" "xah-fly-keys-20200415.106/" "avy-20200311.1106/" "epl-20180205.2049/" "dracula-theme-20200412.1112/" "markdown-mode-20200416.116/" "spinner-1.7.3/" "bind-key-20191110.416/" "zerodark-theme-20190528.923/" "dap-mode-20200407.1905/" "lsp-mode-20200417.436/" "magit-20200408.2341/" "./" "company-20200324.2145/" "projectile-20200329.1908/" "use-package-20200322.2110/" "company-lsp-20190612.1553/" "async-20200113.1745/" "pfuture-20200113.620/" "zweilight-theme-20170113.605/" "twilight-theme-20120412.1303/" "lv-20200227.1301/" "yasnippet-20200413.2221/" "s-20180406.808/" "flycheck-readme.txt" "lsp-treemacs-20200414.407/" "f-20191110.1357/" "ht-20200217.2331/" "xah-elisp-mode-20190125.646/" "all-the-icons-20200411.520/" "treemacs-20200417.1059/" "transient-20200226.1612/" "../" "which-key-20200216.1350/" "hydra-20200306.913/" "dash-20200119.2310/" "lsp-java-20200327.2019/" "request-20200219.2257/" "try-20181204.236/" "archives/" "gnupg/" "bui-20181218.1830/" "swiper-20200319.1334/" "git-commit-20200207.1819/" "ace-window-20200311.1025/" "spinner-1.7.3.signed" "gnu-elpa-keyring-update-2019.3/" "lsp-ui-20200402.839/" "dash-functional-20191109.1327/" "pkg-info-20150517.1143/")
+
+ ("/home/borivoje/.emacs.d-backup03/" (24219 26955 940019 557000) "eshell/" "elpa/" "recentf" "transient/" "acakojic-exwm-theme.el" "learning/" "./" "git-clone/" "sql/" "use/" "url/" "lisp/" "init.el" "test.el" "../" "ido.last" "workspace/" "tango-dark-theme.el" "auto-save-list/" "org-files/" ".cache/")
+
+ ("/home/borivoje/.dotfiles/.emacs.d/elpa/" (24218 62091 108354 763000) "bind-key-20191110.416/" "xelb-0.18.signed" "./" "use-package-20200322.2110/" "xelb-0.18/" "../" "exwm-0.23/" "archives/" "gnupg/" "exwm-0.23.signed")
+
+ ("/home/borivoje/.dotfiles/.emacs.d/elpa/exwm-0.23/" (24218 62091 108354 763000) "exwm.elc" "exwm-xim.elc" "exwm-cm.el" "exwm-randr.el" ".elpaignore" "exwm-floating.elc" "exwm-manage.el" "exwm-cm.elc" "exwm.el" "./" "exwm-layout.el" ".gitignore" "exwm-input.el" "exwm-systemtray.elc" "exwm-core.elc" "exwm-config.elc" "exwm-workspace.elc" "exwm-autoloads.el" "exwm-input.elc" "exwm-xim.el" "xinitrc" "exwm-config.el" "exwm-workspace.el" "../" "exwm-layout.elc" "exwm-systemtray.el" "ChangeLog" "exwm-floating.el" "exwm-core.el" "README.md" "exwm-pkg.el" "exwm-randr.elc" "exwm-manage.elc")
+
+ ("/home/borivoje/.dotfiles/.emacs.d/" (24218 62091 100354 763000) "elpa/" "recentf" "session.106e4b50902da474e2158721103435863800000059860037" "./" "init.el" "../" "ido.last" "auto-save-list/")
+
+ ("/home/borivoje/.dotfiles/" (24218 62091 100354 763000) ".emacs.d/" "./" "../" "README.md" ".git/")
+
+ ("/home/borivoje/.emacs.d/elpa/exwm-0.23/" (24218 60252 416305 567000) "exwm.elc" "exwm-xim.elc" "exwm-cm.el" "exwm-randr.el" ".elpaignore" "exwm-floating.elc" "exwm-manage.el" "exwm-cm.elc" "exwm.el" "./" "exwm-layout.el" ".gitignore" "exwm-input.el" "exwm-systemtray.elc" "exwm-core.elc" "exwm-config.elc" "exwm-workspace.elc" "exwm-autoloads.el" "exwm-input.elc" "exwm-xim.el" "xinitrc" "exwm-config.el" "exwm-workspace.el" "../" "exwm-layout.elc" "exwm-systemtray.el" "ChangeLog" "exwm-floating.el" "exwm-core.el" "README.md" "exwm-pkg.el" "exwm-randr.elc" "exwm-manage.elc")
+
+ ("/home/borivoje/.emacs.d/lisp/exwm/exwm-0.23/" (24218 55345 156174 267000) "exwm.elc" "exwm-xim.elc" "exwm-cm.el" "exwm-randr.el" ".elpaignore" "exwm-floating.elc" "exwm-manage.el" "exwm-cm.elc" "exwm.el" "./" "exwm-layout.el" ".gitignore" "exwm-input.el" "exwm-systemtray.elc" "exwm-core.elc" "exwm-config.elc" "exwm-workspace.elc" "exwm-autoloads.el" "exwm-input.elc" "exwm-xim.el" "xinitrc" "exwm-config.el" "exwm-workspace.el" "../" "exwm-layout.elc" "exwm-systemtray.el" "ChangeLog" "exwm-floating.el" "exwm-core.el" "README.md" "exwm-pkg.el" "exwm-randr.elc" "exwm-manage.elc")
+
+ ("/home/borivoje/gemmax/" (24131 55896 652015 803000) "RFUpdaterRS/" ".idea/" "./" "BelWMS/" "LogView/" "../" "RFView/" "RFGuide/")
+
+ ("/home/borivoje/.emacs.d/lisp/exwm/" (24218 50923 620055 964000) "./" "xelb-0.18/" "../" "exwm-0.23/")
+
+ ("/home/borivoje/Downloads/" (24216 31233 867507 588000) "ubc-vpn/" "logisoft7.ovpn" "oracle_linux8.iso" "ubc_old.dmp" "vmcentos211.ovpn" "debian-10.3.0-amd64-netinst.iso" "emacs-22.3/" "./" "emacs-22.3.tar.gz" "vm-centos.ovpn" "emacs-22.1/" "OracleLinux-R8-U1-x86_64-dvd.iso.1" "my-little-friends/" "logisoft_test.ovpn" "oracle-pc.ovpn" "dowload-oracle-linux.txt" "tree-widget-2.0.tar.gz" "../" "GEMMAX_1103.rar" "description-pak" "emacs-22.1.tar.gz" "GEMMAX_1103.dmp" "emacs27/" "tor-browser-linux64-9.0.5_en-US.tar.xz" "ubc.dmp" "tor-browser_en-US/")
+
+ ("/home/borivoje/.emacs.d/elpa/all-the-icons-20200411.520/" (24218 1749 840085 80000) "all-the-icons-pkg.el" "all-the-icons.el" "all-the-icons-autoloads.el" "./" "all-the-icons-faces.el" "data/" "../" "all-the-icons-faces.elc" "all-the-icons.elc")
+
+ ("/etc/init.d/" (24205 58815 659884 176000) "ipsec" "rmnologin" "avahi-daemon" "oracle-xe" "sysstat" "keyboard-setup.sh" "cups-browsed" "bootmisc.sh" "irqbalance" "urandom" "bootlogs" "udev" "mountall.sh" "nmbd" "openvpn" "l2tpns" "mountall-bootclean.sh" ".depend.start" "cryptdisks-early" "alsa-utils" "pppd-dns" "ike" "killprocs" "x11-common" "speech-dispatcher" "ssh" "checkfs.sh" "./" "reboot" "xl2tpd" "mountkernfs.sh" "hddtemp" "screen-cleanup" "mountdevsubfs.sh" "virtualbox" "hostapd" "qemu-system-x86" "firewalld" "exim4" "rc" "skeleton" "setkey" "mountnfs-bootclean.sh" "gdm3" "cron" "hwclock.sh" "halt" "minissdpd" "acpid" "unattended-upgrades" "apache2" "sendsigs" "motd" "README" "networking" "rsyslog" "cryptdisks" "bluetooth" ".depend.boot" "pcscd" "atd" "rc.local" "lm-sensors" "mountnfs.sh" "cups" "checkroot.sh" "network-manager" "dbus" "../" "ebtables" "rpcbind" "uuidd" "apache-htcacheclean" "checkroot-bootclean.sh" "samba-ad-dc" "nfs-common" "samba" "rsync" "anacron" "umountnfs.sh" "winbind" "umountroot" "hdparm" "hostname.sh" "saned" "single" "console-setup.sh" "kmod" ".depend.stop" "sudo" "gdomap" "umountfs" "procps" "binfmt-support" "mysql" "smbd" "rcS")
+
+ ("/home/borivoje/.openvpn/" (24206 12245 63965 535000) "gemmax.ovpn" "test-ubc/" "ubc.ovpn" "ubc-wms.ovpn" "./" "connect_to.sh" "gemmax_test.ovpn" "logisoft.ovpn" "../" "pristup-serveru" "extract_ovpn_cert.py")
+
+ ("/home/borivoje/virtualFolder/vezbanje/Skeniranje/app/src/main/java/com/acakojic/skeniranje/" (24195 16098 944409 909000) "./" "../" "MainActivity.java")
+
+ ("/home/borivoje/bin/" (24186 39566 183994 102000) "version.sh" "digest.sh" "remove-emacs-lock-if-exist.sh" "2020-03-22-00-20-22.082-VBoxSVC-14758.log" "setclasspath.sh" "tomcat-native.tar.gz" "set-xmodmap.sh" "startup.sh" "test_script.sh" "catalina-tasks.xml" "maven-run-project.sh" "genymotion-run-program.sh" "daemon.sh" "openvpn_test.sh" ".#2020-03-22-00-20-22.082-VBoxSVC-14758.log" "digest.bat" "./" "commons-daemon.jar" "maven-make-project.sh" "set-shifts-to-capslock.sh" "commons-daemon-native.tar.gz" "connect-to-wifi.sh" "payara-log-file.sh" "go-to-sleep.sh" "cpappend.bat" "tool-wrapper.sh" "shutdown.sh" "android-studio" "set-dual-monitor.sh" "show-process.sh" "todo.sh" "catalina.sh" "version.bat" "openvpn.sh" "android-connect-to-device.sh" "genymotion-show-logcat.sh" "make-symlinks.sh" "android-connect-to-port.sh" "configtest.bat" "setclasspath.bat" "glassfish-deploy-project.sh" "import-database-dmp.sh" "payara-deploy-project.sh" "../" "startup.bat" "tool-wrapper.bat" "keyboard-commands.sh" "catalina.bat" "bootstrap.jar" "nul" "tomcat-juli.jar" "htop.sh" "configtest.sh" "genymotion-list-devices.sh" "shutdown.bat" "glassfish-log-file.sh" "netbeans8" "genymotion-start-device.sh" "genymotion-start-device-test.sh")
+
+ ("/home/borivoje/virtualFolder/vezbanje/Skeniranje/app/" (24185 8878 35879 68000) ".project" "proguard-rules.pro" "./" "app.iml" ".gitignore" ".classpath" "build.gradle" "libs/" "../" ".settings/" "build/" "src/")
+
+ ("/home/borivoje/virtualFolder/vezbanje/Skeniranje/" (24185 7494 915918 66000) "settings.gradle" "Skeniranje.iml" ".idea/" ".project" "gradle/" "app/" "./" ".gradle/" ".gitignore" "gradlew" "gradle.properties" "gradlew.bat" "local.properties" "build.gradle" "../" ".settings/")
+
+ ("/home/borivoje/virtualFolder/vezbanje/Skeniranje/app/src/" (24185 7264 795924 555000) "./" "main/" "../" "test/" "androidTest/")
+
+ ("/home/borivoje/virtualFolder/vezbanje/Skeniranje/app/src/main/" (24185 7267 167924 488000) "java/" "./" "../" "AndroidManifest.xml" "res/")
+
+ ("/home/borivoje/virtualFolder/vezbanje/Skeniranje/app/src/main/java/" (24185 7264 811924 554000) "./" "com/" "../")
+
+ ("/home/borivoje/virtualFolder/vezbanje/Skeniranje/app/src/main/java/com/" (24185 7264 811924 554000) "./" "../" "acakojic/")
+
+ ("/home/borivoje/virtualFolder/vezbanje/Skeniranje/app/src/main/java/com/acakojic/" (24185 7264 815924 554000) "./" "skeniranje/" "../")
+
+ ("/home/borivoje/virtualFolder/vezbanje/" (24185 7263 591924 588000) "Android_ScannerSDK_v2.4.5.0/" "GavriloZaSvakiDan/" "./" "TestApp/" "FullscreenApp/" "Skeniranje/" "local.properties" "../" "BottonNavigationActivityTest/" "TestApp02/")
+
+ ("/home/borivoje/vezbanje/" (23982 52496 800167 834000) "debian/" "java/" "android/" "./" "sql/" "gimp/" "emacs/" "unix/" "../" "vim/")
+
+ ("/home/borivoje/virtualFolder/vezbanje/Android_ScannerSDK_v2.4.5.0/" (23856 30302 383875 324000) "JavaDoc.zip" ".idea/" "scanner_control_app_v2.4.5.0.apk" "./" "barcode_scanner_library_v2.4.5.0.aar" "../" "android_scanner_sdk_demo_v2.4.5.0_src/")
+
+ ("/home/borivoje/virtualFolder/" (23963 3580 244169 267000) "Instalacije/" "Microsoft Visual Studio 2010 Ultimate x86-TKiSO/" "LogView-Polimark/" "jtds-1.3.1.jar" "TestService/" "vpn.txt" "erd_plm.png" "promena_artikla_kg.sql" "./" "gomex/" "bihac/" "test-folder/" "Izvestaji.xls" "barkod_fontovi/" "meggle_nemanjini_skriptovi.sql" "Shortcut to posao.lnk" "MEGGLE_Lokacije.xls" "../" "sys.sql" "LPView/" "posao/" "Ikonice/" "B_REZIMSKO_POD_RAMPE_LIFT_340x100.lbl" "shared-folder/" "client 11g/" "vezbanje/")
+
+ ("/etc/init/" (23927 20349 866795 681000) "reload-smbd.conf" "networking.conf" "irqbalance.conf" "ssh.conf" "portmap-wait.conf" "network-interface-security.conf" "udevtrigger.conf" "./" "rpcbind-boot.conf" "rpcbind.conf" "winbind.conf" "network-interface.conf" "binfmt-support.conf" "cryptdisks.conf" "samba-ad-dc.conf" "network-interface-container.conf" "anacron.conf" "udev.conf" "nmbd.conf" "../" "smbd.conf" "usb-modeswitch-upstart.conf" "udevmonitor.conf" "cryptdisks-udev.conf" "startpar-bridge.conf")
+
+ ("/home/borivoje/.config/autostart/" (24182 12541 152330 692000) "org.gnome.Terminal.desktop" "./" ".xmodmap.desktop.swp" "../" "blueman.desktop")
+
+ ("/home/" (23729 5872 784502 495000) "./" "sftp/" "borivoje/" "aca/" "../" "guest/")
+
+ ("/usr/" (22723 59884 7893 658000) "include/" "local/" "games/" "./" "lib/" "sbin/" "share/" "lib32/" "../" "bin/" "src/")
+
+ ("/usr/share/" (24166 9508 3933 85000) "libgphoto2/" "vala-0.34/" "gnome-taquin/" "php7.0-gd/" "ImageMagick-6/" "usb_modeswitch/" "dns/" "farstream/" "GNUstep/" "rhythmbox/" "gdict-1.0/" "base-passwd/" "thunderbird/" "gtk-doc/" "maven-repo/" "m2300w/" "xml/" "mimelnk/" "org.gnome.Characters/" "doc/" "gcj/" "defaults/" "fonts/" "ca-certificates/" "pkgconfig/" "dict/" "strongswan/" "wallpapers/" "seahorse/" "blueman/" "ppp-dev/" "gnome-sudoku/" "libgksu/" "telepathy/" "debianutils/" "xapps-common/" "liblouisutdml/" "gnome-klotski/" "liblouis/" "ant/" "sgml-data/" "hardinfo/" "evince/" "tex-common/" "calendar/" "libgnomekbd/" "GConf/" "tabset/" "locale/" "openvpn/" "four-in-a-row/" "python-wheels/" "systemtap/" "systemd/" "eog/" "gnome-color-manager/" "tasksel/" "php7.0-mbstring/" "distro-info/" "build-essential/" "gnome-shell/" "cdbs/" "snmp/" "wayland-sessions/" "gdb/" "gksu/" "simple-scan/" "yelp/" "color/" "omf/" "keyutils/" "i3blocks/" "five-or-more/" "maven/" "Thunar/" "gutenprint/" "java/" "python3/" "keyrings/" "sgml-base/" "lua/" "poppler/" "php7.0-common/" "pulseaudio/" "GeoIP/" "phpmyadmin/" "fig2dev/" "gnome-clocks/" "python-apt/" "devhelp/" "nemo/" "speech-dispatcher/" "language-tools/" "media-player-info/" "libdbi-perl/" "pkg-config-crosswrapper" "apps/" "cogl/" "desktop-menu-files/" "games/" "wayland/" "insserv/" "brasero/" "xserver-xorg/" "chromium/" "autoconf/" "netpbm/" "console-setup/" "zenity/" "plasma/" "gir-1.0/" "consoletrans/" "cinnamon-session/" "mysql-common/" "apt-listchanges/" "fonts-droid-fallback/" "geany/" "virtualbox/" "tali/" "po-debconf/" "swell-foop/" "gnome/" "numpy/" "iagno/" "sounds/" "idl/" "gnome-chess/" "php7.0-bz2/" "php7.0-readline/" "thumbnailers/" "vlc/" "gnome-control-center/" "libexttextcat/" "muffin/" "adium/" "python/" "backgrounds/" "pstoedit/" "awk/" "discover/" "php7.0-json/" "exim4/" "grilo-plugins/" "pkg-config-dpkghook" "gitweb/" "javascript/" "python-scour/" "gnome-nibbles/" "smplayer/" "fish/" "publicsuffix/" "man-db/" "mozilla/" "gnome-documents/" "openal/" "libtool/" "hyphen/" "help/" "foomatic/" "hal/" "intltool/" "firefox-esr/" "php7.0-xml/" "gimp/" "polkit-1/" "gupnp-dlna-2.0/" "iso-codes/" "gdal/" "ca-certificates-java/" "gcr-3/" "gnome-robots/" "gnome-settings-daemon/" "xcb/" "binfmts/" "adduser/" "installation-report/" "pam/" "gettext-0.19.8/" "caribou/" "gdm/" "polari/" "zeitgeist/" "libparse-debianchangelog-perl/" "cinnamon-control-center/" "avahi/" "apport/" "llvm-3.8/" "emacs24/" "ssl-cert/" "acpi-support/" "iptables/" "hplip/" "doc-base/" "dnsmasq-base/" "automake-1.15/" "cinnamon-settings-daemon/" "texmf/" "mousetweaks/" "perl-openssl-defaults/" "ghostscript/" "kde4/" "emacs/" "rubygems-integration/" "desktop-directories/" "zsh/" "xsessions/" "libvisual-plugins-0.4/" "themes/" "aptitude/" "ffmpeg/" "libreoffice/" "org.gnome.Weather/" "gtk-3.0/" "emacs25/" "unattended-upgrades/" "hunspell/" "pygtk/" "apache2/" "rygel/" "mime/" "vte/" "gnome-mahjongg/" "dh-python/" "sgml/" "zoneinfo/" "pixmaps/" "qutebrowser/" "totem/" "orca/" "dictionaries-common/" "gvfs/" "dpkg/" "evolution-data-server/" "qt5/" "xsane/" "intltool-debian/" "gnome-video-effects/" "hwdata/" "groff/" "sysv-rc/" "debhelper/" "man/" "images/" "gnome-sound-recorder/" "nmap/" "xml-core/" "glib-2.0/" "debconf/" "bsd-mailx/" "upstart/" "fontconfig/" "misc/" "texinfo/" "vala/" "gtksourceview-2.0/" "gst-plugins-base/" "gcc-6/" "gedit/" "gnome-vpn-properties/" "cowsay/" "tesseract-ocr/" "gupnp-av/" "tcltk/" "dbconfig-common/" "pam-configs/" "dconf/" "lintian/" "mythes/" "file-roller/" "vpnc-scripts/" "djvu/" "perl/" "icons/" "php7.0-opcache/" "git-core/" "cryptui/" "tools/" "libimage-exiftool-perl/" "cups/" "dh-autoreconf/" "wayland-protocols/" "libc-bin/" "aclocal-1.15/" "application-registry/" "ispell/" "cdrdao/" "mobile-broadband-provider-info/" "python-support/" "screen/" "dvdauthor/" "initramfs-tools/" "dbus-1/" "sushi/" "software-properties/" "bug/" "m17n/" "xdg-desktop-portal/" "libthai/" "php7.0-mysql/" "epiphany-browser/" "gnome-user-share/" "calibre/" "alacarte/" "common-licenses/" "info/" "gnome-maps/" "aspell/" "file/" "gnome-software/" "empathy/" "ppp/" "foo2zjs/" "php7.0-curl/" "X11/" "gnome-tweak-tool/" "wine/" "base-files/" "menu/" "aclocal/" "pnm2ppa/" "gnome-mines/" "mysql-workbench/" "libquvi-scripts/" "liblangtag/" "colord/" "transmission/" "foo2qpdl/" "gnome-background-properties/" "metacity/" "gnupg/" "plymouth/" "evolution/" "icu/" "icedtea-web/" "readline/" "gnome-bluetooth/" "php7.0-zip/" "vinagre/" "yelp-xsl/" "nfs-common/" "samba/" "gnome-online-accounts/" "bash-completion/" "flatpak/" "osinfo/" "cinnamon/" "alsa/" "gconf/" "synaptic/" "vim/" "cinnamon-screensaver/" "indicators/" "terminfo/" "inkscape/" "mime-info/" "applications/" "enchant/" "p11-kit/" "pyshared/" "cmake-3.7/" "qtchooser/" "php/" "libsensors4/" "gnome-music/" "gnome-builder/" "audacity/" "iso-flags-png-320x240/" "grub/" "i18n/" "qt4/" "w3m/" "tracker/" "gettext/" "remmina/" "webkitgtk-3.0/" "desktop-base/" "reportbug/" "midi/" "consolefonts/" "gstreamer-1.0/" "smtube/" "system-config-printer/" "librarian/" "xscreensaver/" "easy-rsa/" "solid/" "gnome-session/" "proj/" "opensc/" "nano/" "gtksourceview-3.0/" "lightning/" "clang/" "libwacom/" "libgweather/" "mysql/" "os-prober/" "appdata/" "sane/" "ppd/" "openssh/" "PackageKit/" "metainfo/" "perl5/" "libaudio2/" "../" "./")
+
+ ("/home/borivoje/.config/" (24150 60143 844638 166000) "qterminal.org/" "Android Open Source Project/" "gtk-2.0/" "menus/" "mpv/" "evince/" "eog/" "goa-1.0/" "htop/" "yelp/" "user-share/" "gnome-dictionary/" "nemo/" "epiphany/" "midori/" "sqlitestudio/" "chromium/" "./" "dleyna-server-service.conf" "ranger/" "geany/" "vlc/" "gnome-control-center/" "teamviewer/" "user-dirs.locale" "Genymobile/" "smplayer/" "VirtualBox/" "monitors.xml" "monitors.xml~" "autostart/" "qupzilla/" "nautilus/" "libreoffice/" "gtk-3.0/" "pulse/" "freerdp/" "qutebrowser/" "totem/" "i3/" "rygel.conf" "Trolltech.conf" "gedit/" "LibreCAD/" "dconf/" "configstore/" "mimeapps.list" "../" "user-dirs.dirs" "calibre/" "Empathy/" "QtProject.conf" "transmission/" "evolution/" "icedtea-web/" "Rygel/" "dleyna-renderer-service.conf" "skypeforlinux/" "enchant/" "FreeCAD/" "gnome-builder/" "ibus/" "tracker/" "smtube/" "gnome-session/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

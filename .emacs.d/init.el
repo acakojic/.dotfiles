@@ -46,7 +46,7 @@
    '("#ee11dd" "#8584ae" "#b4f5fe" "#4c406d" "#ffe000" "#ffa500" "#ffa500" "#DC8CC3"))
  '(org-agenda-files '("~/.emacs.d/org-files/todo.org"))
  '(package-selected-packages
-   '(ssh tramp symon treemacs-magit magit xah-elisp-mode command-log-mode dracula-theme twilight-theme zerodark-theme zweilight-theme swiper dap-mode lsp-ui company-lsp hydra yasnippet projectile xah-fly-keys which-key try use-package gnu-elpa-keyring-update lsp-java lsp-mode))
+   '(ssh tramp symon treemacs-magit magit xah-elisp-mode command-log-mode dracula-theme twilight-theme zerodark-theme zweilight-theme dap-mode lsp-ui company-lsp hydra yasnippet projectile xah-fly-keys which-key try use-package gnu-elpa-keyring-update lsp-java lsp-mode))
  '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(vc-annotate-background "#0bafed")
@@ -156,16 +156,16 @@
 ;;;;
 ;;search (swiper)https://www.youtube.com/watch?v=D6OUMVbPKSA
 ;;https://www.youtube.com/watch?v=0mwwN0S1dnQ
-(use-package swiper
-  :ensure t
-  :config
-  (progn
-    (ivy-mode 1)
-    (setq ivy-use-virtual-buffers t)
-    (setq enable-recursive-minibuffers t)
+;; (use-package swiper
+  ;; :ensure t
+  ;; :config
+  ;; (progn
+    ;; (ivy-mode 1)
+    ;; (setq ivy-use-virtual-buffers t)
+    ;; (setq enable-recursive-minibuffers t)
     ;; enable this if you want `swiper' to use it
     ;; (setq search-default-mode #'char-fold-to-regexp)
-    (global-set-key "\C-s" 'swiper)
+    ;;(global-set-key "\C-s" 'swiper)
 ;    (global-set-key (kbd "C-c C-r") 'ivy-resume)
 ;    (global-set-key (kbd "<f6>") 'ivy-resume)
 ;    (global-set-key (kbd "M-x") 'counsel-M-x)
@@ -180,9 +180,9 @@
 ;    (global-set-key (kbd "C-c k") 'counsel-ag)
 ;    (global-set-key (kbd "C-x l") 'counsel-locate)
 ;    (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
-    (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
-    )
-  )
+    ;; (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
+    ;; )
+  ;; )
 
 
 ;;;;
@@ -203,8 +203,8 @@
 
 ;;;;
 ;; load-file aca
-(load "~/.emacs.d/use/java.el")
-(load "~/.emacs.d/use/eshell-conf.el")
+;; (load "~/.emacs.d/use/java.el")
+;; (load "~/.emacs.d/use/eshell-conf.el")
 ;;(require 'java.el) 
 
 ;;org-mode
@@ -217,39 +217,39 @@
 ;;;;
 ;; lsp-java
 
-(require 'cc-mode)
+;; (require 'cc-mode)
 
-(condition-case nil
-    (require 'use-package)
-  (file-error
-   (require 'package)
-   (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-   (package-initialize)
-   (package-refresh-contents)
-   (package-install 'use-package)
-   (require 'use-package)))
+;; (condition-case nil
+    ;; (require 'use-package)
+  ;; (file-error
+   ;; (require 'package)
+   ;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+   ;; (package-initialize)
+   ;; (package-refresh-contents)
+   ;; (package-install 'use-package)
+   ;; (require 'use-package)))
 
-(use-package projectile :ensure t)
-(use-package yasnippet :ensure t)
-(use-package lsp-mode :ensure t)
-(use-package hydra :ensure t)
-(use-package company-lsp :ensure t)
-(use-package lsp-ui :ensure t)
-(use-package lsp-java :ensure t :after lsp
-  :config (add-hook 'java-mode-hook 'lsp))
+;; (use-package projectile :ensure t)
+;; (use-package yasnippet :ensure t)
+;; (use-package lsp-mode :ensure t)
+;; (use-package hydra :ensure t)
+;; (use-package company-lsp :ensure t)
+;; (use-package lsp-ui :ensure t)
+;; (use-package lsp-java :ensure t :after lsp
+  ;; :config (add-hook 'java-mode-hook 'lsp))
 
-(use-package dap-mode
-  :ensure t :after lsp-mode
-  :config
-  (dap-mode t)
-  (dap-ui-mode)
-  )
+;; (use-package dap-mode
+  ;; :ensure t :after lsp-mode
+  ;; :config
+  ;; (dap-mode t)
+  ;; (dap-ui-mode)
+  ;; )
 
-(use-package dap-java :after (lsp-java))
+;; (use-package dap-java :after (lsp-java))
 
 ;; (setq lsp-auto-configure nil)
 ;; (setq lsp-print-performance t)
-(lsp-treemacs-sync-mode 1)
+;; (lsp-treemacs-sync-mode 1)
 
 ;; (use-package lsp-treemacs
   ;; :config
@@ -383,10 +383,10 @@
 
 (org-babel-do-load-languages 'org-babel-load-languages
     '(
-      (shell . t)
-      (python . t)
-      (java . t)
-      (sql . t)
+      (sh . t)
+;;      (python . t)
+;;      (java . t)
+;;      (sql . t)
     )
 )
 
@@ -395,6 +395,14 @@
 ;;http://howardism.org/Technical/Emacs/literate-devops.html
 (setq tramp-default-method "ssh")
 
+
+(require 'exwm-randr)
+(setq exwm-randr-workspace-output-plist '(0 "HDMI-0"))
+(add-hook 'exwm-randr-screen-change-hook
+          (lambda ()
+            (start-process-shell-command
+             "xrandr" nil "xrandr --output HDMI-0 --left-of LVDS --auto")))
+(exwm-randr-enable)
 
 
 (exwm-enable)

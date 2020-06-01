@@ -1,0 +1,1 @@
+#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("/home/borivoje/.emacs.d/init.el" ((:point 11445)) "/home/borivoje/.emacs.d/configuration/global-commands.el" ((:point 48)) "/home/borivoje/.emacs.d/lisp/xah-fly-keys.el" ((:point 142962))))
