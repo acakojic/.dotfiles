@@ -3552,7 +3552,7 @@ Version 2019-02-12"
     ("t" . windmove-down)
     ("n" . windmove-right)
     ("c" . windmove-up)
-    ("g" . exwm-workspace-switch-left)
+    ("g" . exwm-workspace-switch-left) 
     ("r" . exwm-workspace-switch-right)
     ("y" . keyboard-quit)
     ("d" . previous-buffer)

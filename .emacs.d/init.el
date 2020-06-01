@@ -405,6 +405,7 @@
 (exwm-randr-enable)
 
 
+
 (exwm-enable)
 ;; (set-face-background 'modeline "#99ff99")
 
