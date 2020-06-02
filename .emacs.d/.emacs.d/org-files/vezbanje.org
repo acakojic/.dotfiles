@@ -1,9 +1,0 @@
-* java osnove
-  
-  rad sa paketima: public private protected bez icega
-  prevodjenje java u class tj kompajliranje izvsavanje
-
-  provera compajliranja kada se u klasi nalazi unutrasnja klasa, koliko .class pravi?
-  
-
-* bash fajlovi staviti u org-fajlove
