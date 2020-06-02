@@ -981,6 +981,16 @@ Version 2019-02-12"
   )
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
 
+(defun exwm-workspace-switch-left ()
+  (interactive)
+  (exwm-workspace-switch-create 0)
+  )
+
+(defun exwm-workspace-switch-right ()
+  (interactive)
+  (exwm-workspace-switch-create 1)
+  )
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;>
 (exwm--define-keys
  (define-prefix-command 'exwm-leader-key-map)
@@ -993,8 +1003,8 @@ Version 2019-02-12"
 
    ("," . xah-fly-window-keymap)
    
-   ("g" . key-select-previous-tab)
-   ("r" . key-select-next-tab)
+   ("g" . exwm-workspace-switch-left)
+   ("r" . exwm-workspace-switch-right)
 
    ("e" . key-save-buffer)
    ("d" . previous-buffer)
@@ -1017,6 +1027,6 @@ Version 2019-02-12"
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;>
-;; 
+;;
 ;; 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<

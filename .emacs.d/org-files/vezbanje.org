@@ -7,3 +7,29 @@
   
 
 * bash fajlovi staviti u org-fajlove
+
+* vezbanje bash
+** echo
+#+name: echo01
+#+begin_src sh
+
+  echo "Hello World"
+
+  a=20
+  b=20
+
+  fun () {
+      if [ 10 -lt 20 ]
+      then
+          echo "a == b"
+      fi
+  }
+
+fun
+
+#+end_src
+
+#+RESULTS: echo01
+| Hello | World |   |
+| a     | ==    | b |
+
