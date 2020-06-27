@@ -45,6 +45,20 @@ Version 2019-02-12"
 ;;   ;; 		   'mode-line '((:background "#99ff99") mode-line))
 ;;   )
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;>
+(defun exwm-workspace-move-window-left ()
+  (interactive)
+  (exwm-workspace-move-window 0)
+  )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;>
+(defun exwm-workspace-move-window-right ()
+  (interactive)
+  (exwm-workspace-move-window 1)
+  )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
+
 
 ;; Global keybindings can be defined with `exwm-input-global-keys'.
 ;; Here are a few examples:
@@ -62,6 +76,12 @@ Version 2019-02-12"
 	;; ([s-home] . [s-pause])
 	;; ([home] . [s-home])
 	([pause] . [s-home])
+
+	([s-e] . [s-home])
+
+	([?\s-l] . exwm-workspace-move-window-left)
+	([?\s-y] . exwm-workspace-move-window-right)
+
 	;; ([home] . exwm-reset)
 	;; ([?\s-l] . exwm-reset)
 	;; ([?\s-c] . exwm-input-release-keyboard)
@@ -115,17 +135,19 @@ Version 2019-02-12"
 (defun key-up ()
   (interactive)
   ;; (cond
-  ;;  ((string= exwm-class-name "Firefox")
-  ;;   (exwm-input--fake-key 'up))
-  ;;  ((string= exwm-class-name "Firefox-esr")
-  ;;   (exwm-input--fake-key 'up))
-  ;;  ((string= exwm-class-name "jetbrains-studio")
-  ;;   (exwm-input--fake-key 'up))
-  ;;  ((string= exwm-class-name "NetBeans IDE 8.2")
-  ;;   (exwm-input--fake-key 'up))
-  ;;  ((string= exwm-class-name "oracle-ide-osgi-boot-OracleIdeLauncher")
-  ;;   (exwm-input--fake-key 'down))
-  ;;  )
+   ;; ((string= exwm-class-name "Firefox")
+   ;;  (exwm-input--fake-key 'up))
+   ;; ((string= exwm-class-name "Firefox-esr")
+   ;;  (exwm-input--fake-key 'up))
+   ;; ((string= exwm-class-name "jetbrains-studio")
+   ;;  (exwm-input--fake-key 'up))
+   ;; ((string= exwm-class-name "NetBeans IDE 8.2")
+   ;;  (exwm-input--fake-key 'up))
+   ;; ((string= exwm-class-name "XTerm")
+   ;;  (exwm-input--fake-key 'up)
+   ;;  (message "Xterm up")
+   ;;  )
+   ;; )
   (if is-mark-on
       (progn
 	(message "S-up")
@@ -364,13 +386,13 @@ Version 2019-02-12"
 (defun key-select-next-tab ()
   (interactive)
   (cond
+   ((string= exwm-class-name "NetBeans IDE 8.2")
+    (exwm-input--fake-key 'M-right))
    ((string= exwm-class-name "Firefox")
     (exwm-input--fake-key 'C-next))
    ((string= exwm-class-name "Firefox-esr")
     (exwm-input--fake-key 'C-next))
    ((string= exwm-class-name "jetbrains-studio")
-    (exwm-input--fake-key 'M-right))
-   ((string= exwm-class-name "NetBeans IDE 8.2")
     (exwm-input--fake-key 'M-right))
    ((= (length exwm-class-name) 0)
     (exwm-input--fake-key 'C-next))
@@ -383,19 +405,18 @@ Version 2019-02-12"
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;>
 (defun key-select-previous-tab ()
   (interactive)
-  ;; (cond
-   ;; ((string= exwm-class-name "Firefox")
-   ;;  (exwm-input--fake-key 'C-left))
-   ;; ((string= exwm-class-name "Firefox-esr")
-   ;;  (exwm-input--fake-key 'C-right))
-   ;; ((string= exwm-class-name "jetbrains-studio")
-   ;;  (exwm-input--fake-key 'C-right))
-   ;; ((string= exwm-class-name "NetBeans IDE 8.2")
-   ;;  (exwm-input--fake-key 'C-right))
-   ;; ((= (length exwm-class-name) 0)
-   ;;  (exwm-input--fake-key 'C-right))
-  ;; )
-      (exwm-input--fake-key 'M-left)
+  (cond
+   ((string= exwm-class-name "NetBeans IDE 8.2")
+    (exwm-input--fake-key 'M-left))
+   ((string= exwm-class-name "Firefox")
+    (exwm-input--fake-key 'C-prior))
+   ((string= exwm-class-name "Firefox-esr")
+    (exwm-input--fake-key 'C-prior))
+   ((string= exwm-class-name "jetbrains-studio")
+    (exwm-input--fake-key 'M-left))
+   ((= (length exwm-class-name) 0)
+    (exwm-input--fake-key 'C-prior))
+   )
   )
 (define-key exwm-mode-map (kbd "H") #'key-select-previous-tab)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
@@ -458,6 +479,34 @@ Version 2019-02-12"
     )
   )  
 (define-key exwm-mode-map (kbd ")") #'key-move-caret-to-code-block-end)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;>
+(defun key-hit-space ()
+  (interactive)
+  (cond
+   ((string= exwm-class-name "Firefox")
+    (exwm-input--fake-key '\ )
+    )
+   ((string= exwm-class-name "Firefox-esr")
+    (exwm-input--fake-key '\ )
+    )
+   ((string= exwm-class-name "jetbrains-studio")
+    (exwm-input--fake-key '\ )
+    )
+   ((string= exwm-class-name "NetBeans IDE 8.2")
+    (exwm-input--fake-key '\ )
+    ;; push a string into kill-ring
+    ;; (kill-new "System.out.println();")
+    ;; paste from kill-ring
+    ;; (exwm-input--fake-key 'C-v)
+    )
+   ((= (length exwm-class-name) 0)
+    (exwm-input--fake-key '\ )
+    )
+   )
+  )
+(define-key exwm-mode-map (kbd ";") #'key-hit-space)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;>
@@ -548,9 +597,21 @@ Version 2019-02-12"
   (interactive)
   (cond
    ((string= exwm-class-name "Firefox")
-    (exwm-input--fake-key 'C-x))
+    (progn 
+      (exwm-input--fake-key 'C-x)
+      (if is-mark-on
+	  (setq is-mark-on nil)
+	)
+      )
+    )
    ((string= exwm-class-name "Firefox-esr")
-    (exwm-input--fake-key 'C-x))
+    (progn 
+      (exwm-input--fake-key 'C-x)
+      (if is-mark-on
+	  (setq is-mark-on nil)
+	)
+      )
+    )
    ((string= exwm-class-name "jetbrains-studio")
     (progn 
       (exwm-input--fake-key 'C-x)
@@ -585,9 +646,21 @@ Version 2019-02-12"
   (interactive)
   (cond
    ((string= exwm-class-name "Firefox")
-    (exwm-input--fake-key 'C-c))
+     (progn 
+      (exwm-input--fake-key 'C-c)
+      (if is-mark-on
+	  (setq is-mark-on nil)
+	)
+      )
+    )
    ((string= exwm-class-name "Firefox-esr")
-    (exwm-input--fake-key 'C-c))
+    (progn 
+      (exwm-input--fake-key 'C-c)
+      (if is-mark-on
+	  (setq is-mark-on nil)
+	)
+      )
+    )
    ((string= exwm-class-name "jetbrains-studio")
     (progn 
       (exwm-input--fake-key 'C-c)
@@ -622,13 +695,37 @@ Version 2019-02-12"
   (interactive)
   (cond
    ((string= exwm-class-name "Firefox")
-    (exwm-input--fake-key 'C-v))
+    (progn 
+      (exwm-input--fake-key 'C-v)
+      (if is-mark-on
+	  (setq is-mark-on nil)
+	)
+      )
+    )
    ((string= exwm-class-name "Firefox-esr")
-    (exwm-input--fake-key 'C-v))
+    (progn 
+      (exwm-input--fake-key 'C-v)
+      (if is-mark-on
+	  (setq is-mark-on nil)
+	)
+      )
+    )
    ((string= exwm-class-name "jetbrains-studio")
-    (exwm-input--fake-key 'C-v))
+    (progn 
+      (exwm-input--fake-key 'C-v)
+      (if is-mark-on
+	  (setq is-mark-on nil)
+	)
+      )
+    )
    ((string= exwm-class-name "NetBeans IDE 8.2")
-    (exwm-input--fake-key 'C-v))
+    (progn 
+      (exwm-input--fake-key 'C-v)
+      (if is-mark-on
+	  (setq is-mark-on nil)
+	)
+      )
+    )
    ((= (length exwm-class-name) 0)
     (exwm-input--fake-key 'C-v))
    )
@@ -641,10 +738,10 @@ Version 2019-02-12"
   (interactive)
   (cond
    ((string= exwm-class-name "Firefox")
-    ;; (exwm-input--fake-key 'C-v)
+    (exwm-input--fake-key 'C-f)
     )
    ((string= exwm-class-name "Firefox-esr")
-    ;; (exwm-input--fake-key 'C-v)
+    (exwm-input--fake-key 'C-f)
     )
    ((string= exwm-class-name "jetbrains-studio")
     (exwm-input--fake-key 'C-f))
@@ -674,7 +771,7 @@ Version 2019-02-12"
     (exwm-input--fake-key 'C-return)
     )
    ((= (length exwm-class-name) 0)
-    ;; (exwm-input--fake-key 'C-f)
+    (exwm-input--fake-key 'S-return)
     )
    )
   )
@@ -746,7 +843,15 @@ Version 2019-02-12"
       )
     )
    ((= (length exwm-class-name) 0)
-    ;; (exwm-input--fake-key 'C-f))
+    (if is-mark-on
+	(progn
+	  (message "mark-region-false")
+	  (setq is-mark-on nil))
+      (progn
+	(message "mark-region-true")
+	(setq is-mark-on t)
+	)
+      )
     )
    )
   )
@@ -890,10 +995,22 @@ Version 2019-02-12"
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;>
 (defun key-show-logcat ()
   (interactive)
-  (when (and exwm-class-name
-             (string= exwm-class-name "jetbrains-studio"))
+  (cond
+   ((string= exwm-class-name "Firefox")
+    ;; (exwm-input--fake-key 'C-next)
+    )
+   ((string= exwm-class-name "Firefox-esr")
+    ;; (exwm-input--fake-key 'C-next)
+    )
+   ((string= exwm-class-name "jetbrains-studio")
+    (exwm-input--fake-key 'M-6))
+   ((string= exwm-class-name "NetBeans IDE 8.2")
     (exwm-input--fake-key 'M-6)
     )
+   ((= (length exwm-class-name) 0)
+    ;; (exwm-input--fake-key 'C-next)
+    )
+   )
   )
 ;; (define-key exwm-mode-map (kbd "6") #'key-android-studio-logcat)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
@@ -959,37 +1076,19 @@ Version 2019-02-12"
   )
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;>
-(defun key-select-previous-tab ()
-  (interactive)
-  (when (and exwm-class-name
-             (string= exwm-class-name "jetbrains-studio"))
-    (exwm-input--fake-key 'M-left)
-    (message "save buffer")
-    )
-  )
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;>
-(defun key-select-next-tab ()
-  (interactive)
-  (when (and exwm-class-name
-             (string= exwm-class-name "jetbrains-studio"))
-    (exwm-input--fake-key 'M-right)
-    (message "save buffer")
-    )
-  )
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
-
 (defun exwm-workspace-switch-left ()
   (interactive)
   (exwm-workspace-switch-create 0)
   )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;>
 
 (defun exwm-workspace-switch-right ()
   (interactive)
   (exwm-workspace-switch-create 1)
   )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;>
 (exwm--define-keys
@@ -1002,6 +1101,8 @@ Version 2019-02-12"
    ("c" . windmove-up)
 
    ("," . xah-fly-window-keymap)
+
+   ;; ("," . xah-fly-window-keymap) ;; todo SPC+f pretraga fajlova
    
    ("g" . exwm-workspace-switch-left)
    ("r" . exwm-workspace-switch-right)
@@ -1027,6 +1128,23 @@ Version 2019-02-12"
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;>
-;;
-;; 
+;; (setq exwm-input-simulation-keys-xterm
+;;       '(([?\C-b] . [right])
+;;         ;; ([?\C-f] . [right])
+;;         ([?\C-p] . [up])
+;;         ([?\C-n] . [down])
+;;         ([?\C-a] . [home])
+;;         ([?\C-e] . [end])
+;;         ([?\M-v] . [prior])
+;;         ([?\C-v] . [next])
+;;         ([?\C-d] . [delete])
+;;         ([?\C-k] . [S-end delete])))
+
+;; (add-hook 'exwm-manage-finish-hook
+;;           (lambda ()
+;;             (when (and exwm-class-name
+;;                        (string= exwm-class-name "XTerm")
+;; 		       (message "Xterm is working")
+;; 		       )
+;;               (exwm-input-set-local-simulation-keys exwm-input-simulation-keys-xterm))))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<
